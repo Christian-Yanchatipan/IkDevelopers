@@ -1,0 +1,122 @@
+:root {
+    /* Colores de texto */
+    --color-blanco: hsl(0, 0%, 100%);
+    --color-texto-oscuro: hsl(220, 26%, 14%);
+    --color-texto-base: hsl(218, 17%, 35%);
+    --color-texto-gris: hsl(216, 15%, 52%);
+    --color-texto-tenue: hsl(214, 20%, 69%);
+    --color-transparente: hsl(0, 0%, 0%, 0);
+
+    /* Colores principales */
+    --color-primario: hsl(275, 81%, 31%);
+    --color-primario-claro: hsl(238, 82%, 68%);
+    --color-boton: hsl(227, 80%, 58%);
+    --color-boton-hover: hsl(227, 80%, 48%);
+    --color-degradado-inicio: hsl(326, 61%, 59%);
+    --color-degradado-fin: hsl(277, 45%, 61%);
+
+    /* Colores de fondos y bordes */
+    --color-fondo-suave: hsl(220, 23%, 97%);
+    --color-fondo-tarjeta: hsl(0, 0%, 98%);
+    --color-borde: hsl(214, 32%, 91%);
+    --color-borde-tarjeta: hsl(284, 46%, 91%);
+
+    /* Colores de detalle */
+    --color-estrella: hsl(43, 96%, 56%);
+    --color-azul: hsl(192, 77%, 57%);
+    --color-rosa: hsl(344, 86%, 64%);
+    --color-verde: hsl(163, 66%, 50%);
+    --color-amarillo: hsl(44, 92%, 63%);
+    --color-carmesi: hsl(336, 78%, 43%);
+
+    /* Degradados */
+    --degradado-texto: linear-gradient(to right, var(--color-degradado-inicio), var(--color-degradado-fin));
+    --degradado-boton: linear-gradient(to right top, var(--color-primario), var(--color-primario-claro));
+    --degradado-oscuro: linear-gradient(135deg, hsl(240, 6%, 24%), hsl(240, 7%, 13%));
+    --degradado-azul: linear-gradient(135deg, hsl(203, 89%, 70%), hsl(220, 84%, 62%));
+    --degradado-rosa: linear-gradient(135deg, hsl(335, 100%, 75%), hsl(344, 86%, 64%));
+    --degradado-verde: linear-gradient(135deg, hsl(163, 79%, 64%), hsl(166, 72%, 44%));
+    --degradado-amarillo: linear-gradient(135deg, hsl(44, 100%, 72%), hsl(27, 96%, 67%));
+    --degradado-carmesi: linear-gradient(135deg, hsl(289, 69%, 39%), hsl(339, 67%, 52%));
+
+    /* Sombras */
+    --sombra-suave: 0 4px 12px hsl(0, 0%, 0%, 0.08);
+    --sombra-barra: 0 4px 12px hsl(0, 0%, 0%, 0.06);
+    --sombra-boton: 0 10px 25px hsl(0, 0%, 0%, 0.12);
+
+    /* Fuentes */
+    --fuente-familia: "Inter", sans-serif;
+    --fuente-2xs: 0.75rem;
+    --fuente-xs: 0.8125rem;
+    --fuente-sm: 0.875rem;
+    --fuente-md: 0.9375rem;
+    --fuente-base: 1rem;
+    --fuente-lg: 1.125rem;
+    --fuente-xl: 1.25rem;
+    --fuente-2xl: 1.375rem;
+    --fuente-3xl: 2rem;
+    --fuente-4xl: 2.25rem;
+    --fuente-5xl: 3rem;
+    --fuente-movil-titulo: 1.75rem;
+    --fuente-movil-hero: 2.125rem;
+
+    /* Espaciados */
+    --espacio-4: 4px;
+    --espacio-8: 8px;
+    --espacio-10: 10px;
+    --espacio-11: 11px;
+    --espacio-14: 14px;
+    --espacio-16: 16px;
+    --espacio-20: 20px;
+    --espacio-24: 24px;
+    --espacio-27: 27px;
+    --espacio-32: 32px;
+    --espacio-34: 34px;
+    --espacio-40: 40px;
+    --espacio-48: 48px;
+    --espacio-56: 56px;
+    --espacio-63: 63px;
+    --espacio-64: 64px;
+    --espacio-79: 79px;
+    --espacio-85: 85px;
+    --espacio-96: 96px;
+
+    /* Bordes */
+    --borde-sm: 6px;
+    --borde-md: 10px;
+    --borde-radio-total: 50%;
+}
+
+/* Tipografía */
+.fuente-principal { font-family: var(--fuente-familia); }
+.texto-2xs { font-size: var(--fuente-2xs); }
+.texto-xs { font-size: var(--fuente-xs); }
+.texto-sm { font-size: var(--fuente-sm); }
+.texto-md { font-size: var(--fuente-md); }
+.texto-base { font-size: var(--fuente-base); }
+.texto-lg { font-size: var(--fuente-lg); }
+.texto-xl { font-size: var(--fuente-xl); }
+.texto-2xl { font-size: var(--fuente-2xl); }
+.texto-3xl { font-size: var(--fuente-3xl); }
+.texto-4xl { font-size: var(--fuente-4xl); }
+.texto-5xl { font-size: var(--fuente-5xl); }
+.peso-ligero { font-weight: 300; }
+.peso-normal { font-weight: 400; }
+.peso-medio { font-weight: 500; }
+.texto-negrita { font-weight: 700; }
+.texto-extra { font-weight: 800; }
+.linea-1 { line-height: 1; }
+.linea-14 { line-height: 1.4; }
+.linea-16 { line-height: 1.6; }
+.linea-20 { line-height: 2; }
+.sin-subrayado { text-decoration: none; }
+.sin-subrayado:hover { text-decoration: underline; }
+.sin-salto { white-space: nowrap; }
+.texto-centrado { text-align: center; }
+.texto-degradado {
+    color: var(--color-transparente);
+    background-image: var(--degradado-texto);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
