@@ -120,3 +120,79 @@
     background-clip: text;
 }
 
+/* Colores de texto */
+.color-texto-blanco { color: var(--color-blanco); }
+.color-texto-oscuro { color: var(--color-texto-oscuro); }
+.color-texto-base { color: var(--color-texto-base); }
+.color-texto-gris { color: var(--color-texto-gris); }
+.color-texto-tenue { color: var(--color-texto-tenue); }
+.color-texto-primario { color: var(--color-primario); }
+.color-texto-estrella { color: var(--color-estrella); }
+.color-texto-azul { color: var(--color-azul); }
+.color-texto-rosa { color: var(--color-rosa); }
+.color-texto-verde { color: var(--color-verde); }
+.color-texto-amarillo { color: var(--color-amarillo); }
+.color-texto-carmesi { color: var(--color-carmesi); }
+
+/* Colores de fondo */
+.fondo-blanco { background-color: var(--color-blanco); }
+.fondo-suave { background-color: var(--color-fondo-suave); }
+.fondo-tarjeta { background-color: var(--color-fondo-tarjeta); }
+.fondo-boton { background-color: var(--color-boton); }
+.fondo-boton:hover { background-color: var(--color-boton-hover); }
+
+/* Fondos con degradado */
+.degradado-boton { background-image: var(--degradado-boton); }
+.degradado-oscuro { background-image: var(--degradado-oscuro); }
+.degradado-azul { background-image: var(--degradado-azul); }
+.degradado-rosa { background-image: var(--degradado-rosa); }
+.degradado-verde { background-image: var(--degradado-verde); }
+.degradado-amarillo { background-image: var(--degradado-amarillo); }
+.degradado-carmesi { background-image: var(--degradado-carmesi); }
+
+/* Layout */
+.bloque { display: block; }
+.flex { display: flex; }
+.grid { display: grid; }
+.items-centro { align-items: center; }
+.justify-centro { justify-content: center; }
+.justify-espaciado { justify-content: space-between; }
+.justify-fin { justify-content: flex-end; }
+.alinear-fin { align-self: end; }
+.no-encoger { flex-shrink: 0; }
+.columnas-2 { grid-template-columns: repeat(2, 1fr); }
+.columnas-4 { grid-template-columns: repeat(4, 1fr); }
+.columnas-footer { grid-template-columns: 397px 199px 1fr 176px; }
+
+/* Posición */
+.posicion-relativa { position: relative; }
+.posicion-absoluta { position: absolute; }
+.arriba-249 { top: 249px; }
+.izquierda-64 { left: var(--espacio-64); }
+.derecha-64 { right: var(--espacio-64); }
+
+/* Alto y ancho */
+.ancho-total { width: 100%; }
+.ancho-14 { width: 14px; }
+.ancho-32 { width: 32px; }
+.ancho-40 { width: 40px; }
+.ancho-52 { width: 52px; }
+.ancho-123 { width: 123px; }
+.ancho-140 { width: 140px; }
+.ancho-500 { width: 500px; }
+.alto-14 { height: 14px; }
+.alto-32 { height: 32px; }
+.alto-40 { height: 40px; }
+.alto-49 { height: 49px; }
+.alto-52 { height: 52px; }
+.alto-157 { height: 157px; }
+.alto-350 { height: 350px; }
+.alto-min-221 { min-height: 221px; }
+.max-270 { max-width: 270px; }
+.max-340 { max-width: 340px; }
+.max-470 { max-width: 470px; }
+.max-1080 { max-width: 1080px; }
+.max-1110 { max-width: 1110px; }
+.dim-perfil { width: 72px; height: 72px; }
+.dim-perfil-lg { width: 90px; height: 90px; }
+.caja-borde { box-sizing: border-box; }
